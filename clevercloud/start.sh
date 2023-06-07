@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 
-echo "Starting instance $INSTANCE_NUMBER"
-sleep 30
-echo "Started instance $INSTANCE_NUMBER"
+echo "Preparing instance $INSTANCE_NUMBER"
+sleep 15
+echo "Prepared instance $INSTANCE_NUMBER"
