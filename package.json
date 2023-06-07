@@ -6,9 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "prepare": "echo 'xxx prepare'",
-    "build": "echo 'xxx build' && npx @nestjs/cli build",
-    "install": "echo 'xxx install:' && npx @nestjs/cli build",
+    "install": "echo 'xxx install' && npx @nestjs/cli build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "echo 'xxx start:' && node dist/main",
     "start:dev": "nest start --watch",
