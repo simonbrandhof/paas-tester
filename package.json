@@ -6,9 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "install": "echo 'xxx install' && npx @nestjs/cli build",
+    "install": "echo 'executing npm script -install-' && npx @nestjs/cli build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
-    "start": "echo 'xxx start:' && node dist/main",
+    "start:prod": "echo 'executing npm script -start:prod-' && node dist/main",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
