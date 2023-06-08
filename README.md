@@ -7,6 +7,12 @@ My expectations for a PaaS are:
 - horizontal and vertical scalability 
 - managed Postgres (automatic backups, cpu/memory/iops metrics, ...)
 - minimal observability: log management, HTTP metrics, alerting
+- scheduled tasks
 - (extra) auto-scalability
 - (extra) automatic deployments from linked GitHub repository
 - (extra) Redis
+
+## Scalingo notes
+
+- set the env variable `NPM_CONFIG_PRODUCTION=false` in order to install npm dev dependencies (required for the NestJS CLI used to build).
+- Scalingo uses the npm scripts `build` and `start` ([doc](https://doc.scalingo.com/languages/nodejs/start))
