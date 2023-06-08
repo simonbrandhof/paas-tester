@@ -17,3 +17,4 @@ My expectations for a PaaS are:
 - set the env variable `NPM_CONFIG_PRODUCTION=false` in order to install npm dev dependencies (required for the NestJS CLI used to build).
 - Scalingo uses the npm scripts `build` and `start` ([doc](https://doc.scalingo.com/languages/nodejs/start))
 - the port is provided by the env variable `PORT`
+- 
