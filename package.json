@@ -8,7 +8,7 @@
     "start": "NODE_ENV=production node dist/index.js",
     "dev": "NODE_ENV=development ts-node-dev --respawn --watch .env,src,test --deps src/index.ts | pino-pretty --colorize",
     "migrateDb:dev": "ts-node src/db/MigrateDb.ts",
-    "migrateDb:prod": "node dist/db/migrateDb.js",
+    "migrateDb:prod": "node dist/db/MigrateDb.js",
     "createDbMigration": "typeorm migration:create src/db/migrations/$NAME",
     "lint": "eslint \"{src,test}/**/*.ts\" --fix"
   },
