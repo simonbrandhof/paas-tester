@@ -1,1 +1,1 @@
-postdeploy: sh scripts/migrate-db.sh
+postdeploy: node dist/db/migrateDb.js
