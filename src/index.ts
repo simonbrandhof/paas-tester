@@ -1,7 +1,7 @@
 import "reflect-metadata"; // Enable the use of annotations/decorators
 import Fastify from "fastify";
 import autoload from "@fastify/autoload";
-import * as closeWithGrace from "close-with-grace";
+import closeWithGrace from 'close-with-grace';
 import helmet from "@fastify/helmet";
 import * as path from "path";
 import typeorm from "typeorm-fastify-plugin";
@@ -65,7 +65,7 @@ const initialize = async () => {
 
   try {
     await app.ready();
-    await app.listen({ port: parseInt(process.env.PORT) });
+    await app.listen({ port: parseInt(process.env.PORT || '3000' ) });
 
   } catch (err) {
     app.log.error(err);
