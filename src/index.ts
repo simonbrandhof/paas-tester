@@ -18,6 +18,7 @@ const confSchema = {
     PORT: {
       type: "integer"
     },
+    HOST: { type: "string" },
     DATABASE_URL: { type: "string" },
     NODE_ENV: { type: "string" }
   }
@@ -68,7 +69,8 @@ const initialize = async () => {
 
   try {
     await app.ready();
-    await app.listen({ port: parseInt(process.env.PORT || '3000' ) });
+    await app.listen({ port: parseInt(process.env.PORT || '3000'),
+      host: (process.env.HOST || '127.0.0.1') });
 
   } catch (err) {
     app.log.error(err);
