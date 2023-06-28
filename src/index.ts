@@ -29,7 +29,10 @@ envSchema({ schema: confSchema, dotenv: true });
 
 const initialize = async () => {
   const app = Fastify({
-    logger: process.env.NODE_ENV === "development"
+    logger: {
+      // @ts-ignore
+      base: false
+    }
   });
 
   await app.register(sensible);
