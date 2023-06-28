@@ -1,1 +1,1 @@
-postdeploy: node dist/db/migrateDb.js
+postdeploy: node dist/db/MigrateDb.js
